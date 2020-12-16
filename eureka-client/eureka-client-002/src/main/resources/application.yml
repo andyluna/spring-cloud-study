@@ -1,0 +1,13 @@
+server:
+  port: 8802
+
+spring:
+    application:
+        name: enreka-client-002
+
+
+eureka:
+    client:
+        service-url:
+            default-zone: http://eureka01:8761/eureka01/
+
