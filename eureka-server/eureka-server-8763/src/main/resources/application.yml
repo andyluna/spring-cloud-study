@@ -1,0 +1,17 @@
+server:
+  port: 8763
+
+spring:
+  application:
+    name: eureka-server
+eureka:
+  instance:
+    hostname: eureka03
+  client:
+    register-with-eureka: false #表示是否将自己注册到注册中心
+#    fetch-registry: false       #指示此客户端是否应从eureka服务器获取eureka注册表信息。
+    service-url:
+      defaultZone: http://eureka01:8761/eureka/,http://eureka02:8762/eureka/
+  server:
+    enable-self-preservation: false #关闭自我保护模式
+    eviction-interval-timer-in-ms: 60000 #清理服务间隔4s，默认60*1000L  60000L

@@ -6,6 +6,7 @@
     <artifactId>spring-cloud-study</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>spring-cloud-study</name>
+
     <description>spring clould 学习</description>
     <packaging>pom</packaging>
     <properties>
