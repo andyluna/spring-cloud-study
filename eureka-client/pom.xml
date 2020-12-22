@@ -15,6 +15,11 @@
         <module>eureka-client-8802</module>
         <module>eureka-client-8803</module>
         <module>eureka-client-8804</module>
+        <module>eureka-product-8901</module>
+        <module>eureka-product-8902</module>
+        <module>eureka-product-8903</module>
+
+
     </modules>
 
 

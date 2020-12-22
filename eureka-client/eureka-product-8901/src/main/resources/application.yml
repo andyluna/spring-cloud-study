@@ -1,0 +1,38 @@
+server:
+  port: 8901
+
+spring:
+  application:
+    name: enreka-prodcut
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: springcloud
+    password: springcloud
+    url: jdbc:mysql://localhost:3306/springcloud?characterEncoding=UTF-8
+  jpa:
+    show-sql: true
+    properties:
+      hibernate.format_sql: true
+    hibernate:
+      ddl-auto: update
+
+
+
+
+
+  #allowPublicKeyRetrieval=true
+
+
+
+
+eureka:
+  client:
+    service-url:
+      default-zone: http://eureka01:8761/eureka/,http://eureka02:8762/eureka/,http://eureka03:8763/eureka/
+  instance:
+    hostname: eurekaclient
+
+
+
+info:
+  name: ${spring.application.name}
