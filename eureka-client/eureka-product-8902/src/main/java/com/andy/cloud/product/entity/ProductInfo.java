@@ -19,7 +19,7 @@ import java.util.Date;
  * @time: 2020/12/21 十二月 10:43
  * @author: xiangdan/xiangdan@dtxytech.com
  */
-@Entity(name = "T_PRODUCT_INFO_8901")
+@Entity(name = "T_PRODUCT_INFO_8902")
 @EntityListeners(AuditingEntityListener.class)
 public class ProductInfo {
 

@@ -73,7 +73,7 @@ class ProductInfoControllerTest extends EurekaProduct8901Test  {
         MvcResult result = mockMvc.perform(MockMvcRequestBuilders.post(basepath + "/save")
                 .accept(mediaType)
                 .contentType(MediaType.APPLICATION_JSON)
-                .content("{\"productName\":\"羊毛衫1\",\"productCode\":\"20001\",\"productPrice\":123.45}")
+                .content("{\"productName\":\"针织衫\",\"productCode\":\"10002\",\"productPrice\":223.45}")
         )
                 .andExpect(MockMvcResultMatchers.status().isOk())
                 .andDo(MockMvcResultHandlers.print())

@@ -1,9 +1,28 @@
 server:
-  port: 8804
+  port: 8902
 
 spring:
   application:
-    name: enreka-client-8804
+    name: enreka-prodcut
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: springcloud
+    password: springcloud
+    url: jdbc:mysql://localhost:3306/springcloud?characterEncoding=UTF-8
+  jpa:
+    show-sql: true
+    properties:
+      hibernate.format_sql: true
+    hibernate:
+      ddl-auto: update
+
+
+
+
+
+  #allowPublicKeyRetrieval=true
+
+
 
 
 eureka:
