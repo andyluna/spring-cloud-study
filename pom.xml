@@ -19,6 +19,7 @@
     <modules>
         <module>eureka-server</module>
         <module>eureka-client</module>
+        <module>spring-config</module>
     </modules>
 
 

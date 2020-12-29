@@ -1,0 +1,24 @@
+server:
+  port: 8888
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          default-label: master
+          uri: https://github.com/andyluna/config-server-repo.git
+          #uri: https://gitee.com/andyluna/config-server-repo.git
+          username: andyluna
+          password: Andy@8372
+          #basedir: ${user.home}/code/config-server-repo
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka01:8761/eureka/
+  instance:
+    hostname: eurekaclient
+
+info:
+  name: ${spring.application.name}
